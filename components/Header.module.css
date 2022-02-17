@@ -1,19 +1,22 @@
 .header_container {
   /* display: flex; */
   color: #fff;
-  /* align-items: center; */
+  align-items: center;
   position: sticky;
   z-index: 1;
   padding: 15px;
   display: flex;
   justify-content: space-between;
 }
+.header_container img {
+  width: 70% !important;
+  min-width: 70% !important;
+}
 .link_container,
 .btn_cont {
   display: none;
 }
 .header_container .logo {
-  margin-left: 10%;
   font-weight: 600;
   font-size: 15px;
 }
@@ -25,6 +28,9 @@
   font-weight: lighter;
 }
 @media (min-width: 659px) {
+  .logo {
+    margin-left: 10%;
+  }
   .btn_cont {
     display: block;
   }
@@ -43,6 +49,10 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+  }
+  .header_container img {
+    width: 0 !important;
+    min-width: 100% !important;
   }
   .header_container button:last-child {
     margin-left: 30%;

@@ -15,8 +15,9 @@ const Home = () => {
         <div className={`${classes.circle} ${classes.circle1}`}></div>
         <div className={`${classes.circle} ${classes.circle2}`}></div>
         <Intro />
-        <Features />
+
         <div className={classes.section_pad}>
+          <Features />
           <HowTo />
           <NoWorries />
           <Explanation />

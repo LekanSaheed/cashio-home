@@ -4,6 +4,7 @@ import classes from "./Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/cashioWhite.png";
+import { HiMenuAlt3 } from "react-icons/hi";
 const Header = () => {
   const variant = {
     hidden: {
@@ -59,7 +60,9 @@ const Header = () => {
       <motion.div className={classes.btn_cont}>
         <motion.button variants={slideIn}>Sign Up</motion.button>
       </motion.div>
-      <div className={classes.menu_bar}>Bar</div>
+      <div className={classes.menu_bar}>
+        <HiMenuAlt3 />
+      </div>
     </motion.div>
   );
 };

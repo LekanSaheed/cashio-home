@@ -2,6 +2,8 @@ import classes from "./Features.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import img from "../public/feature.png";
+import notify from "../public/notify.png";
+import badge from "../public/badge.png";
 const Features = () => {
   const cards = [
     {
@@ -185,13 +187,33 @@ const Features = () => {
             </svg>
           </div>
           <motion.div variants={imgV} className={classes.card3}>
+            <motion.div variants={imgV} className={classes.notify}>
+              {" "}
+              <Image
+                src={notify}
+                layout="fixed"
+                objectFit="contain"
+                quality={100}
+                priority
+              />
+            </motion.div>
             <Image
               src={img}
               alt="person"
               layout="responsive"
-              quality={90}
+              quality={100}
               priority
             />
+            <motion.div variants={imgV} className={classes.badge}>
+              {" "}
+              <Image
+                src={badge}
+                layout="fixed"
+                objectFit="contain"
+                quality={100}
+                priority
+              />
+            </motion.div>
           </motion.div>
         </div>
       </motion.div>
