@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import classes from "./Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/cashioWhite.PNG";
+import logo from "../public/cashioWhite.png";
 const Header = () => {
   const variant = {
     hidden: {

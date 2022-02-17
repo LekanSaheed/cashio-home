@@ -2,7 +2,7 @@ import classes from "./NoWorries.module.css";
 import { CgBolt } from "react-icons/cg";
 import { RiSafeLine } from "react-icons/ri";
 import Image from "next/image";
-import img from "../public/imgr.PNG";
+import img from "../public/imgr.png";
 const NoWorries = () => {
   const Icon = ({ icon, sx }) => {
     return (

@@ -1,7 +1,7 @@
 import classes from "./Features.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import img from "../public/feature.PNG";
+import img from "../public/feature.png";
 const Features = () => {
   const cards = [
     {
