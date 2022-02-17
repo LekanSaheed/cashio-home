@@ -10,7 +10,7 @@
 
 .intro_big {
   font-family: machinaBold;
-  font-size: 36px;
+  font-size: 32px;
   /* line-height: 74px; */
   font-weight: 800;
   background: radial-gradient(#7388ff, #ca73ff, #ff739d);
@@ -26,9 +26,10 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 120px;
+  padding: 0 20px;
 }
 .intro_small {
-  font-size: 17px;
+  font-size: 15px;
   text-align: center;
   /* line-height: 27px; */
   margin-bottom: 30px;
@@ -43,7 +44,7 @@
   color: #acacac;
   word-spacing: 2px;
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
   flex-direction: column;
   gap: 2px;
   text-align: center;
