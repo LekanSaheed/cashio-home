@@ -1,0 +1,80 @@
+.wrapper {
+  background-color: black;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  /* background-image: url("/public/lighthouse.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  position: relative;
+}
+.section {
+  position: relative;
+}
+/* .section::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: 0;
+} */
+.circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  backdrop-filter: blur(90px);
+}
+.circle1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  /* left: 975px; */
+  top: 875px;
+  right: 0;
+  background: rgba(255, 204, 153, 0.472);
+  /* box-shadow: 0px 0 24px 16px rgba(255, 204, 153, 0.472); */
+  filter: blur(50px);
+}
+.circle2 {
+  background-color: #6666ff;
+  left: 14px;
+  top: calc(250px + 150px);
+  /* box-shadow: 0px 0 24px 16px #6666ff, inset 0 0 10px #6666ff; */
+  filter: blur(30px);
+}
+.section_pad {
+  padding: 20px;
+  gap: 30px;
+}
+.clip {
+  position: absolute;
+  /* left: 17.98%; */
+  /* right: -42.91%; */
+  right: 0%;
+  top: 86.54%;
+  margin-bottom: -20%;
+  bottom: -20%;
+  /* height: 1000px; */
+  width: 60%;
+
+  /* rotateY(3.142rad)  */
+  z-index: 0;
+  /* transform: ; */
+}
+@media (min-width: 659px) {
+  .section_pad {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+}
