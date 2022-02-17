@@ -29,7 +29,7 @@ const HowTo = () => {
                 </div>
                 <div className={classes.card_main}>
                   <div className={classes.title}>{card.title}</div>
-                  <div classname={classes.free_space}>{card.details}</div>
+                  <div className={classes.free_space}>{card.details}</div>
                 </div>
               </div>
             );

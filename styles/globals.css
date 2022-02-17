@@ -1,16 +1,16 @@
 @font-face {
   font-family: machina;
-  src: url("./Neue/NeueMachina-Regular.otf");
+  src: url("./Machina/NeueMachina-Regular.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: machinaLight;
-  src: url("./Neue/NeueMachina-Light.otf");
+  src: url("./Machina/NeueMachina-Light.otf");
   font-weight: 400;
 }
 @font-face {
   font-family: machinaBold;
-  src: url("./Neue/NeueMachina-Ultrabold.otf");
+  src: url("./Machina/NeueMachina-Ultrabold.otf");
   font-weight: 800;
 }
 html,
