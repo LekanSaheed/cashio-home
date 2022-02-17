@@ -1,5 +1,7 @@
 import classes from "./Features.module.css";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import img from "../public/feature.PNG";
 const Features = () => {
   const cards = [
     {
@@ -73,6 +75,16 @@ const Features = () => {
       opacity: 1,
       x: 0,
       //   display: "block",
+    },
+  };
+  const imgV = {
+    hidden: {
+      opacity: 0,
+      y: 30,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
     },
   };
   return (
@@ -172,11 +184,15 @@ const Features = () => {
               />
             </svg>
           </div>
-          <motion.img
-            variants={cardVariant}
-            className={classes.card3}
-            src="/feature.PNG"
-          />
+          <motion.div variants={imgV} className={classes.card3}>
+            <Image
+              src={img}
+              alt="person"
+              layout="responsive"
+              quality={90}
+              priority
+            />
+          </motion.div>
         </div>
       </motion.div>
     </motion.div>

@@ -1,6 +1,8 @@
 import classes from "./NoWorries.module.css";
 import { CgBolt } from "react-icons/cg";
 import { RiSafeLine } from "react-icons/ri";
+import Image from "next/image";
+import img from "../public/imgr.PNG";
 const NoWorries = () => {
   const Icon = ({ icon, sx }) => {
     return (
@@ -27,7 +29,13 @@ const NoWorries = () => {
   return (
     <div className={classes.container}>
       <div className={classes.img_con}>
-        <img src="/imgr.PNG" />
+        <Image
+          src={img}
+          alt="person"
+          layout="responsive"
+          quality={90}
+          priority
+        />
       </div>
       <div className={classes.main}>
         <div className={classes.header}>No need to worry</div>

@@ -2,6 +2,8 @@ import { navLinks } from "./raws/navLinks";
 import { motion } from "framer-motion";
 import classes from "./Header.module.css";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../public/cashioWhite.PNG";
 const Header = () => {
   const variant = {
     hidden: {
@@ -35,7 +37,13 @@ const Header = () => {
       variants={variant}
     >
       <motion.div className={classes.logo} variants={variant}>
-        <img src="/cashioWhite.PNG" />
+        <Image
+          src={logo}
+          layout="fixed"
+          objectFit="contain"
+          quality={100}
+          priority
+        />
       </motion.div>
       <motion.div variants={variant} className={classes.link_container}>
         {navLinks.map((link, id) => {

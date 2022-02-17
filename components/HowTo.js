@@ -1,6 +1,8 @@
 import Button from "./Button";
 import classes from "./HowTo.module.css";
 import { BsArrowRight, BsArrowRightCircle } from "react-icons/bs";
+import { motion } from "framer-motion";
+
 const HowTo = () => {
   const how_tos = [
     {
