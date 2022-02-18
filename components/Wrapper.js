@@ -2,11 +2,15 @@ import Header from "./Header";
 import Footer from "./Footer";
 import classes from "./Wrapper.module.css";
 import Intro from "./Intro";
-import Features from "./Features";
+// import Features from "./Features";
 import Explanation from "./Explanation";
 import HowTo from "./HowTo";
 import NoWorries from "./NoWorries";
+import dynamic from "next/dynamic";
 const Home = () => {
+  const Features = dynamic(() => import("./Features"), {
+    ssr: false,
+  });
   return (
     <div className={classes.wrapper}>
       <img className={classes.clip} src="/powerclip.PNG" />

@@ -4,6 +4,8 @@ import Image from "next/image";
 import img from "../public/feature.png";
 import notify from "../public/notify.png";
 import badge from "../public/badge.png";
+import LineTo from "react-lineto";
+import SteppedLine from "react-lineto";
 const Features = () => {
   const cards = [
     {
@@ -96,15 +98,19 @@ const Features = () => {
       variants={contVariant}
       className={classes.container}
     >
-      {/* <div className={classes.header}>Features</div> */}
+      {/* Main Container */}
+
       <motion.div className={classes.fluid}>
         <motion.div
           whileInView="visible"
           initial="hidden"
           variants={contVariant}
-          className={classes.card_container}
+          className={`${classes.card_container}`}
         >
-          <motion.div variants={cardVariant} className={classes.card_border}>
+          <motion.div
+            variants={cardVariant}
+            className={`${classes.card_border} A`}
+          >
             <motion.div className={classes.card}>
               Cashio Aggregates all your connected social media friends and
               customers in a place and allows users easily discover them when
@@ -112,7 +118,12 @@ const Features = () => {
               financial bot, for each social media platform.
             </motion.div>
           </motion.div>
-          <svg height="210" width="70">
+          <motion.div variants={cardVariant} className={`${classes.card2} B`}>
+            Cashio composes of physical and virtual resources that support the
+            flow, storage, processing and analysis of data when any activities
+            is carried out
+          </motion.div>
+          {/* <svg height="210" width="70">
             <line
               x1="0"
               y1="0"
@@ -120,27 +131,9 @@ const Features = () => {
               y2="0"
               style={{ stroke: "rgb(255, 255,255)", strokeWidth: 2 }}
             />
-          </svg>
-
-          <motion.div variants={cardVariant} className={classes.card}>
-            System infrastructure for sending and receiving money easily between
-            friends, family and customers through their most used social media
-            platform
-          </motion.div>
-
-          {/* {cards.map((card, id) => {
-          return (
-            <motion.div
-              variants={cardVariant}
-              className={classes.card}
-              key={id}
-            >
-              <div>{card.main}</div>
-            </motion.div>
-          );
-        })} */}
+          </svg> */}
         </motion.div>
-        <svg
+        {/* <svg
           height="210"
           width="20"
           style={{ position: "relative", left: "-73px", top: "-45px" }}
@@ -152,31 +145,57 @@ const Features = () => {
             y2="37"
             style={{ stroke: "rgb(255, 255,255)", strokeWidth: 2 }}
           />
-        </svg>
-        <div className={classes.card_container2}>
-          <motion.div variants={cardVariant} className={classes.card2}>
-            Cashio composes of physical and virtual resources that support the
-            flow, storage, processing and analysis of data when any activities
-            is carried out
-          </motion.div>
-          <div className={classes.seperator}>
-            <svg
-              height="10"
-              width="120"
-              style={{ position: "relative", top: "-50px" }}
+        </svg> */}
+        <div className={classes.seperator}>
+          <svg height="10" width="auto" className={classes.top_seperator}>
+            <line
+              x1="0"
+              y1="0"
+              x2="200"
+              y2="0"
+              style={{
+                stroke: "rgb(255, 255,255)",
+                strokeWidth: 2,
+              }}
+            />
+          </svg>
+          <div className={classes.seperator_node}>
+            <div
+              className={classes.line_arm}
+              style={{
+                position: "relative",
+
+                display: "flex",
+                transform: "rotateX(3.25rad)",
+                zIndex: "-1",
+              }}
             >
-              <line
-                x1="0"
-                y1="0"
-                x2="200"
-                y2="0"
-                style={{
-                  stroke: "rgb(255, 255,255)",
-                  strokeWidth: 2,
-                }}
-              />
-            </svg>
-            <svg height="10" width="120">
+              <svg height="50" width="1">
+                <line
+                  x1="0"
+                  y1="1000"
+                  x2="0"
+                  y2="0"
+                  style={{
+                    stroke: "rgb(255, 255,255)",
+                    strokeWidth: 2,
+                  }}
+                />
+              </svg>
+              <svg height="10" width="auto">
+                <line
+                  x1="0"
+                  y1="0"
+                  x2="200"
+                  y2="0"
+                  style={{
+                    stroke: "rgb(255, 255,255)",
+                    strokeWidth: 2,
+                  }}
+                />
+              </svg>
+            </div>
+            <svg height="10" width="auto">
               <line
                 x1="0"
                 y1="0"
@@ -186,7 +205,14 @@ const Features = () => {
               />
             </svg>
           </div>
-          <motion.div variants={imgV} className={classes.card3}>
+        </div>
+        <div className={`${classes.card_container2}`}>
+          <motion.div variants={cardVariant} className={`${classes.card4} C`}>
+            System infrastructure for sending and receiving money easily between
+            friends, family and customers through their most used social media
+            platform
+          </motion.div>
+          <motion.div variants={imgV} className={`${classes.card3} D`}>
             <motion.div variants={imgV} className={classes.notify}>
               {" "}
               <Image
@@ -216,6 +242,13 @@ const Features = () => {
             </motion.div>
           </motion.div>
         </div>
+        {/* <SteppedLine
+          fromAnchor="top right"
+          from="B"
+          to="D"
+          toAnchor="bottom left"
+          borderWidth="3px"
+        /> */}
       </motion.div>
     </motion.div>
   );

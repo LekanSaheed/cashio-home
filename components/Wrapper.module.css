@@ -78,3 +78,9 @@
     gap: 100px;
   }
 }
+
+@media (min-width: 1024px) {
+  .section_pad {
+    padding: 150px;
+  }
+}
