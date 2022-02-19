@@ -118,6 +118,22 @@ const Features = () => {
       scale: 1,
     },
   };
+  const note = {
+    hidden: {
+      opacity: 0,
+
+      scale: 0,
+    },
+    visible: {
+      opacity: [0, 0, 1],
+
+      scale: 1,
+      transition: {
+        when: "afterParent",
+        delay: 0.2,
+      },
+    },
+  };
   return (
     <motion.div
       whileInView="visible"
@@ -281,7 +297,11 @@ const Features = () => {
             </svg>
           </div>
           <motion.div variants={imgV} className={`${classes.card3} D`}>
-            <motion.div whileInView="visible" className={classes.notify}>
+            <motion.div
+              varaint={note}
+              whileInView="visible"
+              className={classes.notify}
+            >
               {" "}
               <Image
                 src={notify}
