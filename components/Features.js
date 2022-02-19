@@ -150,20 +150,7 @@ const Features = () => {
             />
           </svg> */}
         </motion.div>
-        <div style={{ textAlign: "center" }} className={classes.vertical_line}>
-          <svg height="35" width="2">
-            <line
-              x1="0"
-              y1="0"
-              x2="0"
-              y2="1000"
-              style={{
-                stroke: "rgb(255, 255,255)",
-                strokeWidth: 3,
-              }}
-            />
-          </svg>
-        </div>
+
         <div className={classes.seperator}>
           <svg height="10" width="auto" className={classes.top_seperator}>
             <line
@@ -224,12 +211,43 @@ const Features = () => {
             </svg>
           </div>
         </div>
+        <div style={{ textAlign: "center" }} className={classes.vertical_line}>
+          <svg height="35" width="2">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="1000"
+              style={{
+                stroke: "rgb(255, 255,255)",
+                strokeWidth: 3,
+              }}
+            />
+          </svg>
+        </div>
         <div className={`${classes.card_container2}`}>
           <motion.div variants={cardVariant} className={`${classes.card4} C`}>
             System infrastructure for sending and receiving money easily between
             friends, family and customers through their most used social media
             platform
           </motion.div>
+          <div
+            style={{ textAlign: "center" }}
+            className={classes.vertical_line}
+          >
+            <svg height="35" width="2">
+              <line
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="1000"
+                style={{
+                  stroke: "rgb(255, 255,255)",
+                  strokeWidth: 3,
+                }}
+              />
+            </svg>
+          </div>
           <motion.div variants={imgV} className={`${classes.card3} D`}>
             <motion.div variants={imgV} className={classes.notify}>
               {" "}
