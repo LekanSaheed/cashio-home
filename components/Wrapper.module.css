@@ -44,7 +44,7 @@
   filter: blur(30px);
 }
 .section_pad {
-  padding: 20px;
+  padding: 40px;
   gap: 30px;
 }
 .clip {
@@ -61,6 +61,11 @@
   /* rotateY(3.142rad)  */
   z-index: 0;
   /* transform: ; */
+}
+@media (max-width: 320px) {
+  .section_pad {
+    padding: 20px;
+  }
 }
 @media (min-width: 659px) {
   .section_pad {
