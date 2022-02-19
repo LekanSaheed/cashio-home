@@ -109,7 +109,7 @@ const Features = () => {
   const imgV = {
     hidden: {
       opacity: 0,
-      x: 100,
+      x: -100,
       scale: 0,
     },
     visible: {
@@ -122,7 +122,8 @@ const Features = () => {
     hidden: {
       opacity: 0,
       y: 200,
-      x: 200,
+      x: 100,
+
       scale: 0,
     },
     visible: {
@@ -131,7 +132,7 @@ const Features = () => {
       x: 0,
       scale: 1,
       transition: {
-        // when: "afterParent",
+        when: "afterParent",
         delay: 0.3,
       },
     },
