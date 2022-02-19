@@ -76,11 +76,13 @@ const Features = () => {
       //   display: "none",
     },
     visible: {
-      opacity: 1,
+      opacity: [0, 1],
       x: 0,
       transition: {
-        delay: 0.1,
-        damping: 20,
+        stiffness: 100,
+        when: "afterParent",
+        duration: 1,
+        damping: 100,
       },
       //   display: "block",
     },
@@ -89,22 +91,31 @@ const Features = () => {
     hidden: {
       opacity: 0,
       x: -30,
+
       //   display: "none",
     },
     visible: {
       opacity: 1,
       x: 0,
-      //   display: "block",
+      transition: {
+        delay: 0.1,
+        stiffness: 60,
+        when: "afterParent",
+        duration: 1,
+        damping: 20,
+      },
     },
   };
   const imgV = {
     hidden: {
       opacity: 0,
-      y: 30,
+      x: 50,
+      scale: 0,
     },
     visible: {
-      opacity: 1,
-      y: 0,
+      opacity: [0, 0, 1],
+      x: 0,
+      scale: 1,
     },
   };
   return (
@@ -118,13 +129,14 @@ const Features = () => {
 
       <motion.div className={classes.fluid}>
         <motion.div
-          whileInView="visible"
-          initial="hidden"
-          variants={contVariant}
+          // whileInView="visible"
+          // initial="hidden"
+          // variants={contVariant}
           className={`${classes.card_container}`}
         >
           <motion.div
             variants={cardVariant}
+            whileInView="visible"
             className={`${classes.card_border} A`}
           >
             <motion.div className={classes.card}>
@@ -151,7 +163,11 @@ const Features = () => {
               />
             </svg>
           </div>
-          <motion.div variants={card2Variant} className={`${classes.card2} B`}>
+          <motion.div
+            variants={card2Variant}
+            whileInView="visible"
+            className={`${classes.card2} B`}
+          >
             Cashio composes of physical and virtual resources that support the
             flow, storage, processing and analysis of data when any activities
             is carried out
@@ -265,7 +281,7 @@ const Features = () => {
             </svg>
           </div>
           <motion.div variants={imgV} className={`${classes.card3} D`}>
-            <motion.div variants={imgV} className={classes.notify}>
+            <motion.div whileInView="visible" className={classes.notify}>
               {" "}
               <Image
                 src={notify}

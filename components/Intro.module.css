@@ -30,11 +30,11 @@
   padding: 0 20px;
 }
 .intro_small {
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
   /* line-height: 27px; */
   margin-bottom: 30px;
-  word-spacing: 2px;
+
   font-weight: 600;
 
   background: #6666ff;
