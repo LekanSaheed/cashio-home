@@ -10,7 +10,7 @@
 
 .intro_big {
   font-family: machinaBold;
-  font-size: 50px;
+  font-size: 55px;
   /* line-height: 74px; */
   font-weight: 800;
   background: radial-gradient(#7388ff, #ca73ff, #ff739d);
@@ -19,6 +19,7 @@
   clip-path: inset();
   -webkit-text-fill-color: transparent;
   text-align: center;
+  line-height: 50px;
 }
 .intro_top {
   display: flex;
@@ -35,6 +36,7 @@
   margin-bottom: 30px;
   word-spacing: 2px;
   font-weight: 600;
+
   background: #6666ff;
   background-clip: text;
   clip-path: inset();
@@ -46,7 +48,7 @@
   display: flex;
   font-size: 17px;
   flex-direction: column;
-  font-family: machinaLight;
+  font-family: machinaBold;
 
   text-align: center;
 }
@@ -61,11 +63,7 @@
   font-size: 14px;
   margin-bottom: 30px;
 }
-@media (min-width: 520px) and (max-width: 658px) {
-  .intro_big {
-    font-size: 43px;
-  }
-}
+
 @media (min-width: 659px) {
   .btn_container {
     flex-direction: row;

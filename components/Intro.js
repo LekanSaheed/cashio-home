@@ -56,9 +56,9 @@ const Intro = () => {
           </span>
         </span>
         <div className={classes.intro_xs}>
-          <span>No bank account, no problem, with cashio</span>
           <span>
-            it’s all about the social platform you are mostly connected to.
+            No bank account, no problem, with cashio it’s all about the social
+            platform you are mostly connected to.
           </span>
         </div>
       </motion.div>

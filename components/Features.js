@@ -118,6 +118,23 @@ const Features = () => {
               financial bot, for each social media platform.
             </motion.div>
           </motion.div>
+          <div
+            style={{ textAlign: "center" }}
+            className={classes.vertical_line}
+          >
+            <svg height="35" width="2">
+              <line
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="1000"
+                style={{
+                  stroke: "rgb(255, 255,255)",
+                  strokeWidth: 3,
+                }}
+              />
+            </svg>
+          </div>
           <motion.div variants={cardVariant} className={`${classes.card2} B`}>
             Cashio composes of physical and virtual resources that support the
             flow, storage, processing and analysis of data when any activities
@@ -133,19 +150,20 @@ const Features = () => {
             />
           </svg> */}
         </motion.div>
-        {/* <svg
-          height="210"
-          width="20"
-          style={{ position: "relative", left: "-73px", top: "-45px" }}
-        >
-          <line
-            x1="0"
-            y1="0"
-            x2="0"
-            y2="37"
-            style={{ stroke: "rgb(255, 255,255)", strokeWidth: 2 }}
-          />
-        </svg> */}
+        <div style={{ textAlign: "center" }} className={classes.vertical_line}>
+          <svg height="35" width="2">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="1000"
+              style={{
+                stroke: "rgb(255, 255,255)",
+                strokeWidth: 3,
+              }}
+            />
+          </svg>
+        </div>
         <div className={classes.seperator}>
           <svg height="10" width="auto" className={classes.top_seperator}>
             <line
