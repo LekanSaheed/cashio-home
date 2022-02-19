@@ -83,6 +83,7 @@ const Features = () => {
         when: "afterParent",
         duration: 1,
         damping: 100,
+        type: "tween",
       },
       //   display: "block",
     },
@@ -102,6 +103,7 @@ const Features = () => {
         stiffness: 60,
         when: "afterParent",
         duration: 1,
+        type: "tween",
         damping: 20,
       },
     },
@@ -140,7 +142,7 @@ const Features = () => {
   const note = {
     hidden: {
       opacity: 0,
-      y: 200,
+      y: 220,
       scale: 0,
     },
     visible: {

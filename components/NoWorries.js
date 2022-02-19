@@ -27,6 +27,14 @@ const NoWorries = () => {
       icon: <RiSafeLine />,
     },
   ];
+  const childV = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+  };
   return (
     <motion.div className={classes.container}>
       <motion.div className={classes.img_con}>
