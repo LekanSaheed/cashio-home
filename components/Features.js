@@ -100,11 +100,11 @@ const Features = () => {
       x: 0,
       transition: {
         delay: 0.1,
-        stiffness: 60,
+        stiffness: 100,
         when: "afterParent",
         duration: 1,
         type: "tween",
-        damping: 20,
+        damping: 120,
       },
     },
   };
@@ -123,19 +123,18 @@ const Features = () => {
   const badgeN = {
     hidden: {
       opacity: 0,
-      y: 200,
+
       x: 100,
 
       scale: 0,
     },
     visible: {
       opacity: 1,
-      y: 0,
+
       x: 0,
       scale: 1,
       transition: {
-        when: "afterParent",
-        delay: 0.3,
+        delay: 0.2,
       },
     },
   };
