@@ -118,6 +118,24 @@ const Features = () => {
       scale: 1,
     },
   };
+  const badgeN = {
+    hidden: {
+      opacity: 0,
+      y: 200,
+      x: 200,
+      scale: 0,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      scale: 1,
+      transition: {
+        // when: "afterParent",
+        delay: 0.3,
+      },
+    },
+  };
   const note = {
     hidden: {
       opacity: 0,
@@ -129,7 +147,6 @@ const Features = () => {
       y: 0,
       scale: 1,
       transition: {
-        when: "afterParent",
         delay: 0.2,
       },
     },
@@ -188,15 +205,6 @@ const Features = () => {
             flow, storage, processing and analysis of data when any activities
             is carried out
           </motion.div>
-          {/* <svg height="210" width="70">
-            <line
-              x1="0"
-              y1="0"
-              x2="200"
-              y2="0"
-              style={{ stroke: "rgb(255, 255,255)", strokeWidth: 2 }}
-            />
-          </svg> */}
         </motion.div>
 
         <div className={classes.seperator}>
@@ -322,7 +330,11 @@ const Features = () => {
               quality={100}
               priority
             />
-            <motion.div variants={imgV} className={classes.badge}>
+            <motion.div
+              variants={badgeN}
+              whileInView="visible"
+              className={classes.badge}
+            >
               {" "}
               <Image
                 src={badge}
