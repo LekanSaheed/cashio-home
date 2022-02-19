@@ -109,11 +109,11 @@ const Features = () => {
   const imgV = {
     hidden: {
       opacity: 0,
-      x: 50,
+      x: 100,
       scale: 0,
     },
     visible: {
-      opacity: [0, 0, 1],
+      opacity: 1,
       x: 0,
       scale: 1,
     },
