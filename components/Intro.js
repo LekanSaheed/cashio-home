@@ -48,11 +48,12 @@ const Intro = () => {
         className={classes.intro_top}
       >
         <span className={classes.intro_big}>
-          <span>Borderless payment</span>
+          <span>Social borderless payment</span>
         </span>
         <span className={classes.intro_small}>
           <span>
-            Send, receive funds, pay bills and giveaways through Social Apps
+            Send, receive funds, pay bills and make giveaways through Social
+            Platforms
           </span>
         </span>
         <div className={classes.intro_xs}>

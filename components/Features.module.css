@@ -11,6 +11,12 @@
   align-items: center;
   margin-top: 40px;
 }
+.card,
+.card2,
+.card3 {
+  position: relative;
+  z-index: 3;
+}
 .card_container {
   width: 100%;
   margin-top: 60px;
@@ -153,6 +159,9 @@
   display: none;
 }
 @media (min-width: 659px) {
+  .vertical_line {
+    display: none;
+  }
   .card_container2 {
     width: 100%;
   }
@@ -169,12 +178,13 @@
     top: -50px;
     position: relative;
     justify-content: space-between;
+    z-index: 0;
     /* height: 100%; */
   }
   .top_seperator {
     position: relative;
     top: -180px;
-    z-index: -1;
+    z-index: 0;
   }
   .seperator_node {
     display: flex;
@@ -195,6 +205,8 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 5;
   }
   .card {
     flex-basis: calc(100% / 3);

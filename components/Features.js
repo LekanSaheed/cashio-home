@@ -72,7 +72,23 @@ const Features = () => {
   const cardVariant = {
     hidden: {
       opacity: 0,
-      x: 10,
+      x: 30,
+      //   display: "none",
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: 0.1,
+        damping: 20,
+      },
+      //   display: "block",
+    },
+  };
+  const card2Variant = {
+    hidden: {
+      opacity: 0,
+      x: -30,
       //   display: "none",
     },
     visible: {
@@ -135,7 +151,7 @@ const Features = () => {
               />
             </svg>
           </div>
-          <motion.div variants={cardVariant} className={`${classes.card2} B`}>
+          <motion.div variants={card2Variant} className={`${classes.card2} B`}>
             Cashio composes of physical and virtual resources that support the
             flow, storage, processing and analysis of data when any activities
             is carried out
@@ -172,7 +188,7 @@ const Features = () => {
 
                 display: "flex",
                 transform: "rotateX(3.25rad)",
-                zIndex: "-1",
+                zIndex: "0",
               }}
             >
               <svg height="50" width="1">
