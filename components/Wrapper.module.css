@@ -1,14 +1,6 @@
 .wrapper {
   background-color: black;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
-  /* background-image: url("/public/lighthouse.svg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
+
   position: relative;
 }
 .section {
@@ -80,6 +72,11 @@
 }
 
 @media (min-width: 1024px) {
+  .section_pad {
+    padding: 100px;
+  }
+}
+@media (min-width: 1124px) {
   .section_pad {
     padding: 150px;
   }

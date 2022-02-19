@@ -9,7 +9,10 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 44px;
+}
+.main .card:last-child {
+  margin-top: 15px;
 }
 .header {
   font-size: 23px;
@@ -32,6 +35,7 @@
   background: linear-gradient(105.87deg, #2f2f2f, #040404);
 }
 .card_title {
+  font-family: machinaBold;
   font-weight: 600;
   font-size: 14px;
 }

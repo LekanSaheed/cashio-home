@@ -4,8 +4,8 @@ import classes from "./Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/cashioWhite.png";
-import { HiMenuAlt3 } from "react-icons/hi";
-const Header = () => {
+
+const Header = ({ setOpen, open }) => {
   const variant = {
     hidden: {
       opacity: 0,
@@ -60,8 +60,11 @@ const Header = () => {
       <motion.div className={classes.btn_cont}>
         <motion.button variants={slideIn}>Sign Up</motion.button>
       </motion.div>
-      <div className={classes.menu_bar}>
-        <HiMenuAlt3 />
+      <div className={classes.menu_bar} onClick={() => setOpen(!open)}>
+        {/* <HiMenuAlt3 /> */}
+        <div className={`${classes.bar} ${classes.bar1}`}></div>
+        <div className={`${classes.bar} ${classes.bar2}`}></div>
+        <div className={`${classes.bar} ${classes.bar3}`}></div>
       </div>
     </motion.div>
   );

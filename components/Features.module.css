@@ -330,12 +330,12 @@
     font-size: 11px;
     line-height: 20px;
   }
-  .card_container {
+  /* .card_container {
     width: 70%;
   }
   .card_container2 {
     width: 70%;
-  }
+  } */
   .line_arm {
     top: -210px;
   }
@@ -364,6 +364,6 @@
     top: -240px;
   }
   .top_seperator {
-    top: -320px;
+    top: -430px;
   }
 }
