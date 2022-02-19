@@ -20,6 +20,21 @@ const MobileNav = ({ open, setOpen }) => {
       },
     },
   };
+  const childV = {
+    hidden: {
+      opacity: 0,
+      y: -80,
+      scale: 0,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        when: "afterParent",
+      },
+    },
+  };
   return (
     <AnimatePresence>
       {open && (
@@ -38,7 +53,7 @@ const MobileNav = ({ open, setOpen }) => {
           <motion.div variants={variant} className={classes.fluid}>
             {navLinks.map((nav, id) => {
               return (
-                <motion.div variants={variant} key={id}>
+                <motion.div variants={childV} key={id}>
                   <Link href={"/" + nav.toLowerCase()}>
                     <motion.a>{nav}</motion.a>
                   </Link>

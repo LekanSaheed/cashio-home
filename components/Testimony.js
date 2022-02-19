@@ -1,4 +1,4 @@
-import classes from "./Explanation.module.css";
+import classes from "./Testimony.module.css";
 
 const Explanation = () => {
   const arr = [

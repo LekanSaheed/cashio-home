@@ -65,6 +65,10 @@
   z-index: 0;
   /* transform: ; */
 }
+.img_con {
+  position: absolute;
+  bottom: 0;
+}
 @media (max-width: 320px) {
   .section_pad {
     padding: 20px;
