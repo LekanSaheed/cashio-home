@@ -10,7 +10,7 @@
 
 .intro_big {
   font-family: machinaBold;
-  font-size: 35px;
+  font-size: 50px;
   /* line-height: 74px; */
   font-weight: 800;
   background: radial-gradient(#7388ff, #ca73ff, #ff739d);
@@ -42,17 +42,17 @@
 }
 .intro_xs {
   color: #e7e7e7;
-  word-spacing: 2px;
+  /* word-spacing: 2px; */
   display: flex;
-  font-size: 13px;
+  font-size: 17px;
   flex-direction: column;
   font-family: machinaLight;
-  gap: 1px;
+
   text-align: center;
 }
 .btn_container {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   flex-direction: column;
 }
 .pointer {

@@ -1,10 +1,10 @@
 .btn {
-  height: 38px;
+  height: 55px;
   display: flex;
   align-items: center;
   gap: 7px;
-  padding: 12px 18px;
-  border-radius: 20px;
+  padding: 15px 25px;
+  border-radius: 30px;
   background: #6666ff;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1);
   border: none;
@@ -15,10 +15,11 @@
   background-color: #f1e1ff;
   border-radius: 50%;
   padding: 4px;
-  font-size: 13px;
+  font-size: 15px;
 }
 .btn span:last-child {
   color: #fff;
+  font-size: 15px;
 }
 .btn span {
   display: flex;
