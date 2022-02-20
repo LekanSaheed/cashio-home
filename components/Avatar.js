@@ -24,6 +24,8 @@ const Avatar = ({ imgSrc, name, role }) => {
             layout="fixed"
             height={200}
             width={200}
+            priority
+            quality={100}
           />
         )}
       </div>
