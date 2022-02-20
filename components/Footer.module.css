@@ -40,4 +40,7 @@
   .link_container {
     flex-direction: row;
   }
+  .container {
+    min-height: 50vh;
+  }
 }

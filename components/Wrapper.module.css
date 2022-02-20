@@ -46,8 +46,8 @@
 .circle3 {
   background: rgb(255, 204, 153);
   filter: blur(15px);
-  top: -8px;
-  right: 0;
+  top: 1000px;
+  right: 30%;
 }
 .section_pad {
   padding: 40px;
@@ -81,6 +81,14 @@
   }
 }
 @media (min-width: 659px) {
+  .circle1 {
+    top: 770px;
+    right: 14%;
+  }
+  .circle3 {
+    top: -8px;
+    right: 0;
+  }
   .section_pad {
     padding: 60px;
     display: flex;
