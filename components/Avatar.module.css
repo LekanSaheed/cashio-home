@@ -25,6 +25,10 @@
   font-family: machinaLight;
 }
 @media (max-width: 513px) {
+  .container {
+    width: 150px;
+    height: 150px;
+  }
   .avatar,
   .avatar span {
     height: 120px !important;
