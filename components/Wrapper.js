@@ -24,6 +24,7 @@ const Home = () => {
       <div className={classes.section}>
         <div className={`${classes.circle} ${classes.circle1}`}></div>
         <div className={`${classes.circle} ${classes.circle2}`}></div>
+        <div className={`${classes.circle} ${classes.circle3}`}></div>
         <Intro />
 
         <div className={classes.section_pad}>

@@ -14,7 +14,7 @@
   /* line-height: 74px; */
   font-weight: 800;
   background: radial-gradient(#7388ff, #ca73ff, #ff739d);
-  backdrop-filter: blur(60px);
+  /* backdrop-filter: blur(60px); */
   background-clip: text;
   clip-path: inset();
   -webkit-text-fill-color: transparent;
