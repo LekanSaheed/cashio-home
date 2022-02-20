@@ -67,12 +67,19 @@
   min-height: 170px;
 }
 .card4 {
-  background: linear-gradient(105.87deg, #2f2f2f, #040404);
+  background: radial-gradient(
+    circle,
+    rgb(255, 204, 153) 5%,
+    rgb(255, 204, 153) 10%,
+    #2f2f2f,
+    #040404
+  );
   padding: 25px;
   font-size: 14px;
   border-radius: 25px;
   line-height: 20px;
   border: solid 2px #acacac;
+  background-position: top;
 }
 
 .card2 {
