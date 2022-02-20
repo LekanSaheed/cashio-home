@@ -27,6 +27,34 @@ const NoWorries = () => {
       icon: <RiSafeLine />,
     },
   ];
+  const contV = {
+    hidden: {
+      opacity: 0,
+      y: 120,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "tween",
+        duration: 2,
+      },
+    },
+  };
+  const cont2v = {
+    hidden: {
+      opacity: 0,
+      y: -120,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "tween",
+        duration: 1.3,
+      },
+    },
+  };
   const childV = {
     hidden: {
       opacity: 0,
@@ -37,7 +65,12 @@ const NoWorries = () => {
   };
   return (
     <motion.div className={classes.container}>
-      <motion.div className={classes.img_con}>
+      <motion.div
+        variants={cont2v}
+        initial="hidden"
+        whileInView="visible"
+        className={classes.img_con}
+      >
         <Image
           src={img}
           alt="person"
@@ -46,7 +79,12 @@ const NoWorries = () => {
           priority
         />
       </motion.div>
-      <motion.div className={classes.main}>
+      <motion.div
+        variants={contV}
+        whileInView="visible"
+        initial="hidden"
+        className={classes.main}
+      >
         <motion.div className={classes.header}>No need to worry</motion.div>
         {arr.map((card, id) => {
           return (

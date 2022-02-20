@@ -1,0 +1,36 @@
+.avatar {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.avatar img {
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.name {
+  font-family: machinaBold;
+  text-align: center;
+}
+.role {
+  font-size: 13px;
+  text-align: center;
+  font-family: machinaLight;
+}
+@media (max-width: 513px) {
+  .avatar,
+  .avatar span {
+    height: 120px !important;
+    width: 120px !important;
+    min-width: auto !important;
+    min-height: auto !important;
+    margin: 0 !important;
+  }
+}

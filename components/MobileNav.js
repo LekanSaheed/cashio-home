@@ -16,20 +16,20 @@ const MobileNav = ({ open, setOpen }) => {
       //   display: "block",
       x: 0,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.17,
+        type: "tween",
       },
     },
   };
   const childV = {
     hidden: {
       opacity: 0,
-      y: -80,
-      scale: 0,
+      x: 120,
     },
     visible: {
       opacity: 1,
-      y: 0,
-      scale: 1,
+      x: 0,
+
       transition: {
         when: "afterParent",
       },

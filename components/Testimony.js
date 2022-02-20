@@ -7,17 +7,20 @@ const Explanation = () => {
     { title: "Lorem", main: "Ipsum sitdet armor" },
   ];
   return (
-    <div className={classes.container}>
-      {arr.map((card, id) => {
-        return (
-          <div key={id} className={classes.card_border}>
-            <div className={classes.card_main}>
-              <div>{card.title}</div>
-              <div>{card.main}</div>
+    <div>
+      <div className={classes.header}>Hear from some of our users</div>
+      <div className={classes.container}>
+        {arr.map((card, id) => {
+          return (
+            <div key={id} className={classes.card_border}>
+              <div className={classes.card_main}>
+                <div>{card.title}</div>
+                <div>{card.main}</div>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };

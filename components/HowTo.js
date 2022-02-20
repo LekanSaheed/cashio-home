@@ -18,25 +18,76 @@ const HowTo = () => {
       details: "Go on, send and receive money from your social handles.",
     },
   ];
+  const containerVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        when: "beforeChildren",
+      },
+    },
+  };
+  const childVariant = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+  const iconVariant = {
+    hidden: {
+      opacity: 0,
+      scale: 0,
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        when: "afterParent",
+        duration: 0.3,
+      },
+    },
+  };
   return (
-    <div className={classes.container_border}>
-      <div className={classes.container}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={containerVariant}
+      className={classes.container_border}
+    >
+      <motion.div variants={containerVariant} className={classes.container}>
         <div className={classes.header}>How to create an account</div>
-        <div className={classes.inner_container}>
+        <motion.div
+          variants={containerVariant}
+          className={classes.inner_container}
+        >
           {how_tos.map((card, id) => {
             return (
-              <div key={id} className={classes.card}>
-                <div className={classes.index_border}>
+              <motion.div
+                variants={childVariant}
+                key={id}
+                className={classes.card}
+              >
+                <motion.div
+                  variants={iconVariant}
+                  className={classes.index_border}
+                >
                   <div className={classes.index}>{id + 1}</div>
-                </div>
+                </motion.div>
                 <div className={classes.card_main}>
                   <div className={classes.title}>{card.title}</div>
                   <div className={classes.free_space}>{card.details}</div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
         <Button
           text="Get Started"
           iconBc={{ background: "transparent", color: "#fff" }}
@@ -47,8 +98,8 @@ const HowTo = () => {
             padding: "12px 18px",
           }}
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

@@ -11,6 +11,7 @@ import MobileNav from "./MobileNav";
 import { useState } from "react";
 import Image from "next/image";
 import pclip from "../public/powerclip.PNG";
+import Team from "./Team";
 const Home = () => {
   const [open, setOpen] = useState(false);
   const Features = dynamic(() => import("./Features"), {
@@ -30,6 +31,7 @@ const Home = () => {
           <HowTo />
           <NoWorries />
           <Testimony />
+          <Team />
           <div className={classes.img_con}>
             <Image className={classes.clip} layout="responsive" src={pclip} />
           </div>
