@@ -1,7 +1,7 @@
 import classes from "./Footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../public/logoColor.PNG";
+import logo from "../public/logoColor.png";
 import { navLinks } from "./raws/navLinks";
 const Footer = () => {
   const newLinks = [...navLinks, "Privacy Policy", "Terms and conditions"];

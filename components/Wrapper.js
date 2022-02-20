@@ -10,7 +10,7 @@ import dynamic from "next/dynamic";
 import MobileNav from "./MobileNav";
 import { useState } from "react";
 import Image from "next/image";
-import pclip from "../public/powerclip.PNG";
+import pclip from "../public/powerclip.png";
 import Team from "./Team";
 const Home = () => {
   const [open, setOpen] = useState(false);

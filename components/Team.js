@@ -3,7 +3,7 @@ import classes from "./Team.module.css";
 import { motion } from "framer-motion";
 import solo from "../public/solo.jpg";
 import chuks from "../public/chuks.jpg";
-import saheed from "../public/me.jpg";
+import saheed from "../public/me.JPG";
 const Team = () => {
   const team = [
     { imgSrc: null, name: "John Harnie Paul", role: "Back End Dev" },
