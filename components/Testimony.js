@@ -10,13 +10,7 @@ const Explanation = () => {
     { title: "Lorem", main: "Ipsum sitdet armor" },
     { title: "Lorem", main: "Ipsum sitdet armor" },
   ];
-  ];
-  ];
   const settings = {
-  const settings = {
-  const settings = {
-    dots: true,
-    dots: true,
     dots: true,
     arrows: false,
     infinite: true,
