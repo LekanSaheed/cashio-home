@@ -1,15 +1,38 @@
 import classes from "./Testimony.module.css";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const Explanation = () => {
   const arr = [
     { title: "Lorem", main: "Ipsum sitdet armor" },
     { title: "Lorem", main: "Ipsum sitdet armor" },
     { title: "Lorem", main: "Ipsum sitdet armor" },
+    { title: "Lorem", main: "Ipsum sitdet armor" },
+    { title: "Lorem", main: "Ipsum sitdet armor" },
   ];
+  ];
+  ];
+  const settings = {
+  const settings = {
+  const settings = {
+    dots: true,
+    dots: true,
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    focusOnSelect: true,
+    speed: 500,
+    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // centerPadding: "100px",S
+  };
   return (
-    <div>
+    <div className={classes.container}>
       <div className={classes.header}>Hear from some of our users</div>
-      <div className={classes.container}>
+      <Slider {...settings}>
+        {/* <div> */}
         {arr.map((card, id) => {
           return (
             <div key={id} className={classes.card_border}>
@@ -20,7 +43,8 @@ const Explanation = () => {
             </div>
           );
         })}
-      </div>
+        {/* </div> */}
+      </Slider>
     </div>
   );
 };

@@ -1,6 +1,6 @@
-.container {
+.container .slick-track {
   display: flex;
-  flex-direction: column;
+
   gap: 10px;
 }
 .card_border {
@@ -9,6 +9,7 @@
   padding: 2px;
   border-radius: 25px;
   display: flex;
+  margin: 10px !important;
 }
 .header {
   font-size: 17px;
@@ -21,7 +22,7 @@
   padding: 20px;
   border-radius: inherit;
   /* font-weight: 400; */
-  height: 1fr;
+  height: 198px;
   flex-basis: 100%;
   color: #fff;
   font-weight: 400;
