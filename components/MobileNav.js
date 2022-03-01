@@ -4,7 +4,9 @@ import Link from "next/link";
 import classes from "./MobileNav.module.css";
 import { MdClose } from "react-icons/md";
 import Button from "./Button";
+Import {useRouter} from "next/router"
 const MobileNav = ({ open, setOpen }) => {
+const router = useRouter()
   const variant = {
     hidden: {
       opacity: 0,
@@ -72,6 +74,7 @@ const MobileNav = ({ open, setOpen }) => {
             }}
           >
             <Button
+onClick={() => router.push("https://app.mycashiowallet.com/sign-up")}
               sx={{
                 height: "63px",
                 borderRadius: "50px",
@@ -82,7 +85,7 @@ const MobileNav = ({ open, setOpen }) => {
               text="Sign Up"
               iconBc={{ display: "none" }}
             />
-            <Link href="https://cashio-wallet.vercel.app/login">
+            <Link href="https://app.mycashiowallet.com/login">
               <a style={{ color: "#6666ff", fontFamily: "machinaBold" }}>
                 Login here
               </a>
