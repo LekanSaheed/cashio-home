@@ -4,7 +4,7 @@ import Link from "next/link";
 import classes from "./MobileNav.module.css";
 import { MdClose } from "react-icons/md";
 import Button from "./Button";
-Import {useRouter} from "next/router";
+import {useRouter} from "next/router";
 const MobileNav = ({ open, setOpen }) => {
 const router = useRouter()
   const variant = {
