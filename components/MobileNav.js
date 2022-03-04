@@ -4,9 +4,9 @@ import Link from "next/link";
 import classes from "./MobileNav.module.css";
 import { MdClose } from "react-icons/md";
 import Button from "./Button";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 const MobileNav = ({ open, setOpen }) => {
-const router = useRouter()
+  const router = useRouter();
   const variant = {
     hidden: {
       opacity: 0,
@@ -74,7 +74,10 @@ const router = useRouter()
             }}
           >
             <Button
-onClick={() => router.push("https://app.mycashiowallet.com/sign-up")}
+              onClick={() =>
+                typeof window !== "undefined" &&
+                window.open("https://app.mycashiowallet.com/sign-up", "_blank")
+              }
               sx={{
                 height: "63px",
                 borderRadius: "50px",

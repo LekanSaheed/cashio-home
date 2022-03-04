@@ -50,18 +50,19 @@ const Intro = () => {
         <span className={classes.intro_big}>
           <span>Social borderless payment</span>
         </span>
+        <br />
         <span className={classes.intro_small}>
           <span>
             Send, receive funds, pay bills and make giveaways through Social
             Platforms
           </span>
         </span>
-        <div className={classes.intro_xs}>
+        {/* <div className={classes.intro_xs}>
           <span>
             No bank account? No problem. With cashio it’s all about the social
             platform you are mostly connected to.
           </span>
-        </div>
+        </div> */}
       </motion.div>
       <div className={classes.pointer}>Available For</div>
       <motion.div variants={btnContVariant} className={classes.btn_container}>
