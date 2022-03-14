@@ -1,0 +1,26 @@
+{
+  "name": "cashio",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "framer-motion": "^5.4.4",
+    "next": "12.0.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-lineto": "^3.3.0",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@iconify-icons/la": "^1.1.0",
+    "@iconify/react": "^3.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4"
+  }
+}
