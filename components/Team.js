@@ -3,17 +3,20 @@ import classes from "./Team.module.css";
 import { motion } from "framer-motion";
 import solo from "../public/solo.jpg";
 import chuks from "../public/chuks.jpg";
+import koom from "../public/koom.jpg";
 import saheed from "../public/me.JPG";
+import josh from "../public/josh.jpg";
+import daemon from "../public/daemon.jpg";
+import paul from "../public/paul.jpg";
 const Team = () => {
   const team = [
-    { imgSrc: null, name: "John Harnie Paul", role: "Back End Dev" },
-    { imgSrc: solo, name: "John Harnie Solomon", role: "Creative" },
-    { imgSrc: saheed, name: "Lekan Saheed", role: "Front End Dev" },
-
-    { imgSrc: null, name: "Solomon Koom", role: "Lead Creative Designer" },
-    { imgSrc: null, name: "Josh", role: "Bank End Dev" },
-    { imgSrc: chuks, name: "Chuks Ojugo", role: "QA Tester" },
-    { imgSrc: null, name: "Emmanuel", role: "Back End Dev" },
+    { imgSrc: paul, name: "John Harnie Paul", role: "Co-Founder & CEO" },
+    { imgSrc: solo, name: "John Harnie Solomon", role: "Co-Founder & COO" },
+    { imgSrc: daemon, name: "Emmanuel", role: "Co-Founder & Backend" },
+    { imgSrc: josh, name: "Josh", role: "CTO & Backend " },
+    { imgSrc: saheed, name: "Lekan Saheed", role: "Frontend" },
+    { imgSrc: koom, name: "Solomon Koom", role: "Creative Designer" },
+    { imgSrc: chuks, name: "Chuks Ojugo", role: "Q&A" },
   ];
   const Cvariant = {
     hidden: {
