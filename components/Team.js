@@ -15,7 +15,7 @@ const Team = () => {
     { imgSrc: daemon, name: "Emmanuel", role: "Co-Founder & Backend" },
     { imgSrc: josh, name: "Josh", role: "CTO & Backend " },
     { imgSrc: saheed, name: "Lekan Saheed", role: "Frontend" },
-    { imgSrc: koom, name: "Solomon Koom", role: "Creative Designer" },
+    { imgSrc: koom, name: "Solomon Koom", role: "Lead Creative Designer" },
     { imgSrc: chuks, name: "Chuks Ojugo", role: "Q&A" },
   ];
   const Cvariant = {
